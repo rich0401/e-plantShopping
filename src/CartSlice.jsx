@@ -30,7 +30,7 @@ export const CartSlice = createSlice({
             existingItem.quantity -= 1;
         }
         else{
-            state.items = state.items.filter(item => item.name !== action.payload);
+            state.items = state.items.filter(item => item.name !== action.payload.name);
         }
     },
   },
